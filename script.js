@@ -25,7 +25,7 @@ let myClients = [
 
 convertBtn.addEventListener("click", function() {
 	// EXTRACT VALUE FOR HTML HEADER. 
-    // ('first Name', 'last Name', 'occupation' and 'number')
+    // ('Client ID', 'Client Name', 'Category' and 'Price')
     let col = [];
     myClients.forEach(client=>{
         for (let key in client) {
@@ -73,11 +73,11 @@ convertBtn.addEventListener("click", function() {
     	}
     }
     // Change the innerHtml of the button
-    if(convertBtn.value == "Convert"){
-      convertBtn.value = "Revert";
-    } else {
-      convertBtn.value = "Convert";
-    }
+    // if(convertBtn.value == "Convert"){
+    //   convertBtn.value = "Revert";
+    // } else {
+    //   convertBtn.value = "Convert";
+    // }
 
-    // convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
+    convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
 })

@@ -25,7 +25,7 @@ let myClients = [
 
 convertBtn.addEventListener("click", function() {
 	// EXTRACT VALUE FOR HTML HEADER. 
-    // ('Client ID', 'Client Name', 'occupation' and 'number')
+    // ('first name', 'last Name', 'occupation' and 'number')
     let col = [];
     myClients.forEach(client=>{
         for (let key in client) {

@@ -25,7 +25,7 @@ let myClients = [
 
 convertBtn.addEventListener("click", function() {
 	// EXTRACT VALUE FOR HTML HEADER. 
-    // ('Client ID', 'Client Name', 'Category' and 'Price')
+    // ('Client ID', 'Client Name', 'occupation' and 'number')
     let col = [];
     myClients.forEach(client=>{
         for (let key in client) {
@@ -47,6 +47,7 @@ convertBtn.addEventListener("click", function() {
         th.innerHTML = col[i];
         tr.appendChild(th);
     }
+
 
     // ADD JSON DATA TO THE TABLE AS ROWS.
     myClients.forEach(client => {
@@ -71,5 +72,12 @@ convertBtn.addEventListener("click", function() {
 		    divContainer.removeChild(createdTable[i]);
     	}
     }
+    // Change the innerHtml of the button
+    // if(convertBtn.value == "Convert"){
+    //   convertBtn.value = "Revert";
+    // } else {
+    //   convertBtn.value = "Convert";
+    // }
 
+    convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
 })

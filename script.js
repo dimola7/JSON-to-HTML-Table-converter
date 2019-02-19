@@ -73,11 +73,11 @@ convertBtn.addEventListener("click", function() {
     	}
     }
     // Change the innerHtml of the button
-    // if(convertBtn.value == "Convert"){
-    //   convertBtn.value = "Revert";
-    // } else {
-    //   convertBtn.value = "Convert";
-    // }
+    if(convertBtn.value == "Convert"){
+      convertBtn.value = "Revert";
+    } else {
+      convertBtn.value = "Convert";
+    }
 
-    convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
+    // convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
 })

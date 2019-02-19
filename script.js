@@ -25,7 +25,7 @@ let myClients = [
 
 convertBtn.addEventListener("click", function() {
 	// EXTRACT VALUE FOR HTML HEADER. 
-    // ('first name', 'last Name', 'occupation' and 'number')
+    // ('first Name', 'last Name', 'occupation' and 'number')
     let col = [];
     myClients.forEach(client=>{
         for (let key in client) {
@@ -80,4 +80,4 @@ convertBtn.addEventListener("click", function() {
     }
 
     // convertBtn.value == "Convert" ? convertBtn.value = "Revert" : convertBtn.value = "Convert";
-// })
+})
